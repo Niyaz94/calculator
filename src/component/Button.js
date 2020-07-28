@@ -15,11 +15,13 @@ export default class Button extends React.Component {
   };
 
   render() {
-    const className = [
-      "component-button",
-      this.props.orange ? "orange" : "",
-      this.props.wide ? "wide" : "",
-    ];
+    //add classes for buttons
+    /**
+     * orange           ===>>> orange color
+     * wide             ===>>> wide width for [0] button
+     * component-button ===>>> for all buttons
+     */
+    const className = ["component-button",this.props.orange ? "orange" : "",this.props.wide ? "wide" : "",];
 
     return (
       <div className={className.join(" ").trim()}>
